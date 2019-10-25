@@ -24,7 +24,12 @@ const routes = [
     path: '/fotos/:id',
     name: 'fotos',
     component: () => import(/* webpackChunkName: "fotos" */ '../views/Fotos.vue')
-  }
+  },
+  {
+    path: '/grid',
+    name: 'grid',
+    component: () => import(/* webpackChunkName: "grid" */ '../views/Grid.vue')
+  },
 ]
 
 const router = new VueRouter({
